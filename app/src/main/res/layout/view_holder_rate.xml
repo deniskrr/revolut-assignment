@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+      android:id="@+id/value_et"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:digits="0123456789.,"
+      android:focusableInTouchMode="true"
+      android:gravity="end"
+      android:hint="@string/empty_value"
+      android:imeActionLabel="Done"
+      android:imeOptions="actionDone"
+      android:importantForAutofill="no"
+      android:inputType="number"
+      android:maxLength="15"
+      android:maxLines="1"
+      android:singleLine="true"
+      app:amount="@{rate.value}"
+      app:layout_constraintBottom_toBottomOf="@+id/long_name_tv"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/long_name_tv"
+      app:layout_constraintTop_toTopOf="@+id/code_tv"
+      tools:text="4.80" />
+
+    <TextView
+      android:id="@+id/long_name_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:text="@{rate.currency.longName}"
+      android:textAppearance="@style/CurrencyLongNameTextAppearance"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/code_tv"
+      app:layout_constraintTop_toBottomOf="@+id/code_tv"
+      tools:text="Romanian leu" />
+
+    <TextView
+      android:id="@+id/code_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="32dp"
+      android:text="@{rate.currency.code}"
+      android:textAppearance="@style/CurrencyCodeTextAppearance"
+      app:layout_constraintStart_toEndOf="@+id/country_iv"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="RON" />
+
+    <androidx.constraintlayout.widget.Barrier
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="right"
+      app:constraint_referenced_ids="long_name_tv,code_tv"
+      tools:layout_editor_absoluteX="159dp"
+      tools:layout_editor_absoluteY="25dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+      android:id="@+id/country_iv"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="16dp"
+      app:layout_constraintBottom_toBottomOf="@+id/long_name_tv"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/code_tv"
+      app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+      app:strokeColor="#EDEDED"
+      app:strokeWidth="1dp"
+      tools:src="@drawable/flag_romania" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <data>
+
+    <variable
+      name="rate"
+      type="com.deniskrr.domain.model.Rate" />
+  </data>
+</layout>
