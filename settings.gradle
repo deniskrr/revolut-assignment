@@ -1,5 +1,4 @@
 include ':data'
-include ':test'
 include ':domain'
 include ':app'
 rootProject.name = "Revoluter"
