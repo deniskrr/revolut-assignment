@@ -1,4 +1,4 @@
-package com.deniskrr.data
+package com.deniskrr.data.repo.local
 
 import androidx.room.Dao
 import androidx.room.Insert

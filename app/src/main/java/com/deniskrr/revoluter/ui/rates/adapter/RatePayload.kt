@@ -1,4 +1,4 @@
-package com.deniskrr.revoluter.ui.adapter
+package com.deniskrr.revoluter.ui.rates.adapter
 
 import java.math.BigDecimal
 

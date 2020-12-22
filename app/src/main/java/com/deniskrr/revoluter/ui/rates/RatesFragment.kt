@@ -1,4 +1,4 @@
-package com.deniskrr.revoluter.ui
+package com.deniskrr.revoluter.ui.rates
 
 import android.content.Context
 import android.net.ConnectivityManager
@@ -14,7 +14,7 @@ import com.deniskrr.domain.logger.Logger
 import com.deniskrr.domain.repo.DataSourceType
 import com.deniskrr.revoluter.R
 import com.deniskrr.revoluter.databinding.RatesFragmentBinding
-import com.deniskrr.revoluter.ui.adapter.RateAdapter
+import com.deniskrr.revoluter.ui.rates.adapter.RateAdapter
 import com.deniskrr.revoluter.utils.setupToolbar
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint

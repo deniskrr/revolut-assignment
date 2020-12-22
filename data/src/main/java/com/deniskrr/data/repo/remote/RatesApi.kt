@@ -1,4 +1,4 @@
-package com.deniskrr.data
+package com.deniskrr.data.repo.remote
 
 import com.deniskrr.data.model.ExchangeRates
 import retrofit2.Response

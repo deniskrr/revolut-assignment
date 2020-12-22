@@ -3,11 +3,11 @@ package com.deniskrr.data.di
 import android.content.Context
 import androidx.room.Room
 import com.deniskrr.data.BuildConfig
-import com.deniskrr.data.RatesApi
-import com.deniskrr.data.repo.LocalRateDataSource
+import com.deniskrr.data.repo.remote.RatesApi
+import com.deniskrr.data.repo.local.LocalRateDataSource
 import com.deniskrr.data.repo.RateRepositoryImpl
-import com.deniskrr.data.repo.RemoteRateDataSource
-import com.deniskrr.data.repo.RevolutDatabase
+import com.deniskrr.data.repo.remote.RemoteRateDataSource
+import com.deniskrr.data.repo.local.RevolutDatabase
 import com.deniskrr.domain.repo.RateRepository
 import dagger.Binds
 import dagger.Module

@@ -1,6 +1,5 @@
-package com.deniskrr.data.repo
+package com.deniskrr.data.repo.remote
 
-import com.deniskrr.data.RatesApi
 import com.deniskrr.domain.model.Rate
 import com.deniskrr.domain.model.RevolutResult
 import com.deniskrr.domain.repo.DataSource

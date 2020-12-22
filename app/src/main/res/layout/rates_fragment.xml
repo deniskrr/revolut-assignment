@@ -44,6 +44,6 @@
 
     <variable
       name="viewModel"
-      type="com.deniskrr.revoluter.ui.RatesViewModel" />
+      type="com.deniskrr.revoluter.ui.rates.RatesViewModel" />
   </data>
 </layout>

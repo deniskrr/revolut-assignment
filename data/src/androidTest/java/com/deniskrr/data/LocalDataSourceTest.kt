@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.deniskrr.data.repo.LocalRateDataSource
-import com.deniskrr.data.repo.RevolutDatabase
+import com.deniskrr.data.repo.local.LocalRateDataSource
+import com.deniskrr.data.repo.local.RevolutDatabase
 import com.deniskrr.domain.model.Currency
 import com.deniskrr.domain.model.RevolutResult
 import com.deniskrr.domain.utils.getBaseRateWithCoefficient

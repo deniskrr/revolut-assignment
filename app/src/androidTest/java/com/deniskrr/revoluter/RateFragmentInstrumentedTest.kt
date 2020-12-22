@@ -15,7 +15,7 @@ import com.deniskrr.domain.model.RevolutResult
 import com.deniskrr.domain.repo.DataSourceType
 import com.deniskrr.domain.repo.RateRepository
 import com.deniskrr.revoluter.logger.AndroidLogger
-import com.deniskrr.revoluter.ui.RatesFragment
+import com.deniskrr.revoluter.ui.rates.RatesFragment
 import com.nhaarman.mockitokotlin2.*
 import dagger.hilt.android.testing.BindValue
 import dagger.hilt.android.testing.HiltAndroidRule

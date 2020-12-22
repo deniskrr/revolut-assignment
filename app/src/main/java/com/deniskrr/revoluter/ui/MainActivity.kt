@@ -1,4 +1,4 @@
-package com.deniskrr.revoluter
+package com.deniskrr.revoluter.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

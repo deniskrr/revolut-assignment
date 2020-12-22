@@ -1,4 +1,4 @@
-package com.deniskrr.data.repo
+package com.deniskrr.data.repo.local
 
 import com.deniskrr.data.model.LocalRate
 import com.deniskrr.domain.model.Rate

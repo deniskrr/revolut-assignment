@@ -1,4 +1,4 @@
-package com.deniskrr.revoluter.ui
+package com.deniskrr.revoluter.ui.rates
 
 import android.app.Application
 import android.content.Context

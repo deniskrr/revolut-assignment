@@ -6,6 +6,6 @@
 
   <fragment
     android:id="@+id/ratesFragment"
-    android:name="com.deniskrr.revoluter.ui.RatesFragment"
+    android:name="com.deniskrr.revoluter.ui.rates.RatesFragment"
     android:label="RatesFragment" />
 </navigation>
